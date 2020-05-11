@@ -91,6 +91,7 @@ border-radius: 10px;
 .contact-list i {
   font-size: 66px;
   padding-right: 5rem;
+  
 }
 
 .about-body {
@@ -128,3 +129,6 @@ border-radius: 10px;
   padding-right: 5rem;
 }
 
+.fa:hover {
+  color: #2c3e50;
+}
