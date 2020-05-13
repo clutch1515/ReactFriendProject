@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
+import ResumeLarsenClickable from '../assets/ResumeLarsenClickable.pdf'
 import ResumeLarsen from '../assets/ResumeLarsen.png'
 
 class Resume extends Component {
     render(){
         return(
-            <div >
+            <div>
                 <h1>
-                    <img src={ResumeLarsen}></img> 
+                <a href={ResumeLarsenClickable} target="_blank" Color="black" className="resume-text"> 
+                    <img src={ResumeLarsen} className='resume'></img>
+                    <p className="resume-text">
+                        Click for a clickable PDF
+                    </p>
+                </a>
                 </h1>
             </div>
         );

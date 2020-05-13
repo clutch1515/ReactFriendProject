@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { Tab, Tabs, Grid, Cell, Card, CardTitle, CardActions, CardText, Button, CardMenu, IconButton } from 'react-mdl';
+import friendScreenshot from '../assets/friendScreenshot.png';
+import ReactNucamp from '../assets/ReactNucamp.png';
+import guessingScreenshot from '../assets/guessingScreenshot.png';
+
 
 
 class Projects extends Component {
@@ -13,13 +17,14 @@ class Projects extends Component {
             return(
                 <div className="projects-grid">
                     <Card shadow={5} style={{width: '450', margin: 'auto'}}>
-                        <CardTitle className="card-title-1" style={{color: '#fff', height: '176px', background: 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fb%2Fb6%2FBadge_js-strict.svg%2F739px-Badge_js-strict.svg.png&f=1&nofb=1) center / cover' }} > JavaScript </CardTitle>
+                        
+                        <CardTitle className="card-title-1" style={{color: '#fff', height: '176px', backgroundImage: `url(${friendScreenshot})`  }} > JavaScript </CardTitle>
                         <CardText>
-                            Here is an example of a game build in simple HTML/CSS/JS
+                            Here is an example of a simple React app that uses an api to generate a random new friend.
                         </CardText>
                         <CardActions border>
-                            <Button colored>Go to code</Button>
-                            <Button colored>Go to site</Button>
+                            <Button colored href="https://github.com/clutch1515/ReactFriendProject">Go to code</Button>
+                            <Button colored href="https://hungry-dijkstra-f9eeb8.netlify.app/">Go to site</Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share" />
@@ -27,13 +32,13 @@ class Projects extends Component {
                     </Card>                  
                     
                     <Card shadow={5} style={{width: '450', margin: 'auto'}}>
-                        <CardTitle className="card-title-1" style={{color: '#fff', height: '176px', background: 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fb%2Fb6%2FBadge_js-strict.svg%2F739px-Badge_js-strict.svg.png&f=1&nofb=1) center / cover' }} > JavaScript </CardTitle>
+                        <CardTitle className="card-title-1" style={{color: '#fff', height: '176px', background: `url(${ReactNucamp}) ` }} > JavaScript </CardTitle>
                         <CardText>
-                            Here is an example of a game build in simple HTML/CSS/JS
+                            Here is an example of a React app we build with a JSON server with multiple functionality
                         </CardText>
                         <CardActions border>
-                            <Button colored>Go to code</Button>
-                            <Button colored>Go to site</Button>
+                            <Button colored href="https://github.com/clutch1515/ReactNucamp">Go to code</Button>
+                            <Button colored href="https://nucamp-react.netlify.app/home">Go to site</Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share" />
@@ -41,13 +46,13 @@ class Projects extends Component {
                     </Card>
                                        
                     <Card shadow={5} style={{width: '450', margin: 'auto'}}>
-                        <CardTitle className="card-title-1" style={{color: '#fff', height: '176px', background: 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fb%2Fb6%2FBadge_js-strict.svg%2F739px-Badge_js-strict.svg.png&f=1&nofb=1) center / cover' }} > JavaScript </CardTitle>
+                        <CardTitle className="card-title-1" style={{color: '#fff', height: '176px', background: `url(${guessingScreenshot}) center` }} > JavaScript </CardTitle>
                         <CardText>
-                            Here is an example of a game build in simple HTML/CSS/JS
+                            Here is an example of a Binary Guessing game build in JavaScript 
                         </CardText>
                         <CardActions border>
-                            <Button colored>Go to code</Button>
-                            <Button colored>Go to site</Button>
+                            <Button colored href="https://github.com/clutch1515/binaryGuess">Go to code</Button>
+                            <Button colored href="https://wonderful-archimedes-ae0fcf.netlify.app/">Go to site</Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share" />
@@ -200,10 +205,10 @@ class Projects extends Component {
         return(
             <div className="category-tabs">
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                    <Tab>HTML/CSS</Tab>
-                    <Tab>React</Tab>
+                    <Tab>Projects</Tab>
+                    {/* <Tab>React</Tab>
                     <Tab>React Native</Tab>
-                    <Tab>Mongo DB</Tab>
+                    <Tab>Mongo DB</Tab> */}
                 </Tabs>
 
                
