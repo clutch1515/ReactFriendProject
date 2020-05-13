@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Tab, Tabs, Grid, Cell, Card, CardTitle, CardActions, CardText, Button, CardMenu, IconButton } from 'react-mdl';
-import friendScreenshot from '../assets/friendScreenshot.png';
-import ReactNucamp from '../assets/ReactNucamp.png';
 import guessingScreenshot from '../assets/guessingScreenshot.png';
+import ReactNucamp from '../assets/ReactNucamp.png';
+import friendScreenshot from '../assets/friendScreenshot.png';
 
 
 
