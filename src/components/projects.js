@@ -24,7 +24,7 @@ class Projects extends Component {
                         </CardText>
                         <CardActions border>
                             <Button colored href="https://github.com/clutch1515/ReactFriendProject">Go to code</Button>
-                            <Button colored href="https://hungry-dijkstra-f9eeb8.netlify.app/">Go to site</Button>
+                            <Button colored href="hhttps://newfriend.netlify.app/">Go to site</Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share" />
@@ -38,7 +38,7 @@ class Projects extends Component {
                         </CardText>
                         <CardActions border>
                             <Button colored href="https://github.com/clutch1515/ReactNucamp">Go to code</Button>
-                            <Button colored href="https://nucamp-react.netlify.app/home">Go to site</Button>
+                            <Button colored href="https://nucampreact.netlify.app">Go to site</Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share" />
@@ -52,7 +52,7 @@ class Projects extends Component {
                         </CardText>
                         <CardActions border>
                             <Button colored href="https://github.com/clutch1515/binaryGuess">Go to code</Button>
-                            <Button colored href="https://wonderful-archimedes-ae0fcf.netlify.app/">Go to site</Button>
+                            <Button colored href="binaryguess.netlify.app/">Go to site</Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share" />
