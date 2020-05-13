@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Tab, Tabs, Grid, Cell, Card, CardTitle, CardActions, CardText, Button, CardMenu, IconButton } from 'react-mdl';
-import guessingScreenshot from '../assets/guessingScreenshot.png';
+import guessingScreenshot1 from '../assets/guessingScreenshot1.png';
 import ReactNucamp from '../assets/ReactNucamp.png';
 import friendScreenshot from '../assets/friendScreenshot.png';
 
@@ -46,7 +46,7 @@ class Projects extends Component {
                     </Card>
                                        
                     <Card shadow={5} style={{width: '450', margin: 'auto'}}>
-                        <CardTitle className="card-title-1" style={{color: '#fff', height: '176px', background: `url(${guessingScreenshot}) center` }} > JavaScript </CardTitle>
+                        <CardTitle className="card-title-1" style={{color: '#fff', height: '176px', background: `url(${guessingScreenshot1}) center` }} > JavaScript </CardTitle>
                         <CardText>
                             Here is an example of a Binary Guessing game build in JavaScript 
                         </CardText>
