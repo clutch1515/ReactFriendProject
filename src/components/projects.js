@@ -3,6 +3,9 @@ import { Tab, Tabs, Grid, Cell, Card, CardTitle, CardActions, CardText, Button, 
 import guessingScreenshot1 from '../assets/guessingScreenshot1.png';
 import ReactNucamp from '../assets/ReactNucamp.png';
 import friendScreenshot from '../assets/friendScreenshot.png';
+import chat from '../assets/ReactChat.png';
+import working from '../assets/working.gif';
+/* import { Player } from 'video-react'; */
 
 
 
@@ -15,8 +18,11 @@ class Projects extends Component {
     toggleCategories(){
         if(this.state.activeTab === 0) {
             return(
-                <div className="projects-grid">
-                    <Card shadow={5} style={{width: '450', margin: 'auto'}}>
+                
+                <div style={{width: '80%', margin: 'auto', padding: 'auto'}}>
+                    <Grid className="grid-ruler">
+                    <Cell container item xs={12} spacing={3}>
+                        <Card shadow={5} style={{width: '450', margin: 'auto'}}>
                         
                         <CardTitle className="card-title-1" style={{color: '#fff', height: '176px', backgroundImage: `url(${friendScreenshot})`  }} > JavaScript </CardTitle>
                         <CardText>
@@ -29,8 +35,10 @@ class Projects extends Component {
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share" />
                         </CardMenu>
-                    </Card>                  
+                    </Card>
+                    </Cell>                  
                     
+                    <Cell container item xs={12} spacing={3}>
                     <Card shadow={5} style={{width: '450', margin: 'auto'}}>
                         <CardTitle className="card-title-1" style={{color: '#fff', height: '176px', background: `url(${ReactNucamp}) ` }} > JavaScript </CardTitle>
                         <CardText>
@@ -44,7 +52,9 @@ class Projects extends Component {
                             <IconButton name="share" />
                         </CardMenu>
                     </Card>
-                                       
+                    </Cell>
+
+                    <Cell container item xs={12} spacing={3}>                   
                     <Card shadow={5} style={{width: '450', margin: 'auto'}}>
                         <CardTitle className="card-title-1" style={{color: '#fff', height: '176px', background: `url(${guessingScreenshot1}) center` }} > JavaScript </CardTitle>
                         <CardText>
@@ -57,10 +67,72 @@ class Projects extends Component {
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share" />
                         </CardMenu>
+
                     </Card>
+                    </Cell>
+                    </Grid>
+
+                    <Grid className="demo-grid-ruler">
+                    <Cell container item xs={12} spacing={3}>
+                        <Card shadow={5} style={{width: '450', margin: 'auto'}}>
+                        
+                        <CardTitle className="card-title-1" style={{color: '#fff', height: '176px', backgroundImage: `url(${chat})`  }} > JavaScript </CardTitle>
+                        <CardText>
+                            Here is an example of a websocket and react app.
+                        </CardText>
+                        <CardActions border>
+                            <Button colored href="https://github.com/clutch1515/reactChat">Go to code</Button>
+                            <Button colored href="https://clutch1515.github.io/reactChat/">Go to site</Button>
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name="share" />
+                        </CardMenu>
+                    </Card>
+                    </Cell>                  
+                    
+                    <Cell container item xs={12} spacing={3}>                   
+                    <Card shadow={5} style={{width: '450', margin: 'auto'}}>
+                        <CardTitle className="card-title-1" style={{color: '#fff', height: '176px', background: `url(${working}) center` }} > JavaScript </CardTitle>
+                        <CardText>
+                            More projects to be hosted soon! Check back shortly.
+                        </CardText>
+                        <CardActions border>
+                            <Button colored href="//">Go to code</Button>
+                            <Button colored href="//">Go to site</Button>
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name="share" />
+                        </CardMenu>
+
+                    </Card>
+                    </Cell>
+                    
+
+                    <Cell container item xs={12} spacing={3}>                   
+                    <Card shadow={5} style={{width: '450', margin: 'auto'}}>
+                        <CardTitle className="card-title-1" style={{color: '#fff', height: '176px', background: `url(${working}) center` }} > JavaScript </CardTitle>
+                        <CardText>
+                            More projects to be hosted soon! Check back shortly.
+                        </CardText>
+                        <CardActions border>
+                            <Button colored href="//">Go to code</Button>
+                            <Button colored href="//">Go to site</Button>
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name="share" />
+                        </CardMenu>
+
+                    </Card>
+                    </Cell>
+                    </Grid>
+
+
                 </div>
+                
             )
-        } else if(this.state.activeTab === 1) {
+        } 
+        
+        else if(this.state.activeTab === 1) {
             return(
                 <div className="projects-grid">
                     <Card shadow={5} style={{width: '450', margin: 'auto'}}>
@@ -121,7 +193,7 @@ class Projects extends Component {
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share" />
                         </CardMenu>
-                    </Card>                  
+                    </Card>                
                     
                     <Card shadow={5} style={{width: '450', margin: 'auto'}}>
                         <CardTitle className="card-title-1" style={{color: '#fff', height: '176px', background: 'url(https://moduscreate.com/wp-content/uploads/2015/09/Aligning-Children-using-Flexbox-in-React-Native.jpg) center / cover' }} > JavaScript </CardTitle>

@@ -25,7 +25,7 @@ class About extends Component {
                                     <ListItem>
                                         <ListItemContent>
                                             <p style={{width: '75%', margin: 'auto', paddingTop: '1em', fontFamily: 'oxygen'}}>Hello! My name is Peter and I live in Reno with my wife and dog. I've been involved with programming since elementry school where I learned HTML and saved it on my floppy disk. I took a different route in highschool and college where I turned my focus to science, engineering, and health.</p>
-                                            <p style={{width: '75%', margin: 'auto', paddingTop: '1em', fontFamily: 'oxygen'}}>What I can offer you is a diverse background with loads of life experience. I am an outgoing gregorius person who is self motivated and always smiling. I look forward to meeting you, whoever you are.
+                                            <p style={{width: '75%', margin: 'auto', paddingTop: '1em', fontFamily: 'oxygen'}}>What I can offer you is a diverse background with loads of life experience. I am an outgoing, gregorius person who is self motivated and always smiling. I look forward to meeting you, whoever you are.
 
                                             </p>
                                         </ListItemContent>
